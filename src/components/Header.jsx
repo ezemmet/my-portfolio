@@ -1,11 +1,10 @@
-import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { faBarsStaggered } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useState } from 'react'
 
 const Header = () => {
 
   const ezemmetLogo = '<ezemmet/>'
-  const eLogo = '<e/>'
 
   const [menu, setMenu] = useState('hidden')
 
@@ -21,11 +20,10 @@ const Header = () => {
   return (
     <div className='grid grid-cols-2 items-center h-[10vh] bg-[#000000] text-white px-[3rem] lg:px-[10rem]'>
       <div>
-        <p className='text-2xl font-fontPrompt text-red-600 hidden md:block'>{ezemmetLogo}</p>
-        <p className='text-2xl font-fontPrompt text-red-600 block md:hidden'>{eLogo}</p>
+        <p className='text-lg md:text-2xl font-fontPrompt text-red-600'>{ezemmetLogo}</p>
       </div>
       <div className='text-end'>
-        <FontAwesomeIcon onClick={handleToggleMenu} icon={faBars} className='md:hidden text-2xl cursor-pointer' />
+        <FontAwesomeIcon onClick={handleToggleMenu} icon={faBarsStaggered} className='md:hidden text-2xl cursor-pointer' />
         <div className={`absolute right-0 top-[10%] md:top-0 ${menu} md:relative md:block`}>
           <ul className='md:flex text-center md:justify-end font-fontKanit bg-[#000000d7] md:bg-transparent'>
             <li className='px-5 hover:text-red-600'><a href="/home">Home</a></li>
