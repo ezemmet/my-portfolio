@@ -5,6 +5,8 @@ import Services from "./components/Services";
 import ServiceCard from "./components/ServiceCard";
 import Skills from "./components/Skills";
 import SkillCard from "./components/SkillCard";
+import Contact from "./components/Contact";
+import Footer from './components/Footer'
 
 export {
     Header,
@@ -13,5 +15,7 @@ export {
     Services,
     ServiceCard,
     Skills,
-    SkillCard
+    SkillCard,
+    Contact,
+    Footer
 }

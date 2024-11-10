@@ -1,12 +1,34 @@
 import React from 'react'
 import SkillCard from './SkillCard'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCaretRight } from '@fortawesome/free-solid-svg-icons'
+import PythonIcon from '../icons/pythonicon.png'
+import JSIcon from '../icons/jsicon.png'
+import CssIcon from '../icons/cssicon.png'
+import GitIcon from '../icons/giticon.png'
+import GithubIcon from '../icons/githubicon.png'
+import HtmlIcon from '../icons/htmlicon.png'
+import MongoIcon from '../icons/mongoicon.png'
+import NodeIcon from '../icons/nodeicon.png'
+import ReactIcon from '../icons/reacticon.png'
+import TailwindIcon from '../icons/tailwindicon.png'
 
 const Skills = () => {
     return (
-        <div className='bg-[#1d1d1d] h-[50vh] text-white'>
-            <h2>Skills</h2>
-            <div>
-                <SkillCard />
+        <div className='bg-[#1d1d1d] h-[70vh] text-white py-[3rem] px-[8rem]'>
+            <h2 className='font-fontNunito text-xl font-semibold'><FontAwesomeIcon className='text-red-600 mr-1' icon={faCaretRight} />My Skills</h2>
+            <h3 className='text-2xl font-semibold font-fontPrompt'> - Skills I Know</h3>
+            <div className='grid grid-cols-5 gap-[1.5rem] mt-[3rem]'>
+                <SkillCard icon={PythonIcon} name={'Python'} />
+                <SkillCard icon={JSIcon} name={'Javascript'} />
+                <SkillCard icon={ReactIcon} name={'React JS'} />
+                <SkillCard icon={NodeIcon} name={'Node JS'} />
+                <SkillCard icon={GithubIcon} name={'Git Hub'} />
+                <SkillCard icon={GitIcon} name={'Git'} />
+                <SkillCard icon={HtmlIcon} name={'HTML 5 '} />
+                <SkillCard icon={CssIcon} name={'CSS 3'} />
+                <SkillCard icon={TailwindIcon} name={'Tailwind'} />
+                <SkillCard icon={MongoIcon} name={'Mongo DB'} />
             </div>
         </div>
     )
