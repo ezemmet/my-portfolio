@@ -4,7 +4,7 @@ import React from 'react'
 
 const About = () => {
     return (
-        <div className='bg-[#1d1d1d] text-white grid md:grid-cols-12 h-[100vh] md:h-[70vh] md:px-[5rem] py-[3rem] md:text-start text-center'>
+        <div id='about' className='bg-[#1d1d1d] text-white grid md:grid-cols-12 h-[100vh] md:h-[70vh] md:px-[5rem] py-[3rem] md:text-start text-center'>
             <div className='md:col-span-4 px-[3rem] py-[1rem] h-[40vh] md:h-[352.69px]'>
                 <div className='h-full "w-full bg-gradient-to-b from-red-600 to-black via-black" rounded'>
                     {/* <img src={} alt="Nitin Sharma"/> */}
