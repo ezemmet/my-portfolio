@@ -9,11 +9,11 @@ const Contact = () => {
     }
 
     return (
-        <div id='contact' className='bg-[#0e0e0e] text-white h-[75vh] py-[3rem] px-[8rem] text-center relative'>
+        <div id='contact' className='bg-[#0e0e0e] text-white lg:h-[75vh] py-[3rem] lg:px-[8rem] px:[3rem] text-center relative'>
             <h2 className='font-fontNunito text-xl font-semibold'><FontAwesomeIcon className='text-red-600 mr-1' icon={faCaretRight} />Conact Me</h2>
             <h3 className='text-2xl font-semibold font-fontPrompt'>- Send Me A Message</h3>
             <div className=' grid justify-center'>
-                <form className='grid w-[40vw] font-fontKanit' onSubmit={handleSubmit}>
+                <form className='grid lg:w-[40vw] w-[60vw] font-fontKanit' onSubmit={handleSubmit}>
                     <label className='text-start mt-6' htmlFor="name">Your name *</label>
                     <input className='bg-transparent outline-none border-b-2 border-red-600 py-1' type="text" placeholder='Enter your name' required />
                     <label className='text-start mt-6' htmlFor="email">Your email *</label>
