@@ -5,10 +5,10 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className='bg-[#000000] text-white grid lg:grid-cols-12 items-center lg:h-[20vh] gap-x-4 lg:px-[8rem] px-[3rem] text-center'>
+    <div className='bg-[#000000] text-white grid lg:grid-cols-12 items-center lg:h-[20vh] lg:gap-x-4 lg:px-[8rem] px-[1rem] text-center'>
       <div className='lg:col-span-3 text-center lg:text-start mt-[2rem] lg:mt-0'>
         <h4 className='text-xl font-fontPrompt'><FontAwesomeIcon className='text-red-600 mr-1' icon={faCaretRight} />GET IN TOUCH</h4>
-        <p className='font-fontJosefin mt-2'><FontAwesomeIcon className='text-red-600' icon={faEnvelope} /> nitinsharmaofficial11@gmail.com</p>
+        <p className='font-fontPrompt mt-2 text-sm'><FontAwesomeIcon className='text-red-600' icon={faEnvelope} /> nitinsharmaofficial11@gmail.com</p>
         <p className='font-fontPrompt'><FontAwesomeIcon className='text-red-600' icon={faPhone} /> 0123456789</p>
       </div>
 

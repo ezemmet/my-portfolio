@@ -24,8 +24,8 @@ const Header = () => {
       </div>
       <div className='text-end'>
         <FontAwesomeIcon onClick={handleToggleMenu} icon={faBarsStaggered} className='md:hidden text-2xl cursor-pointer' />
-        <div className={`absolute right-0 top-[10%] md:top-0 ${menu} md:relative md:block`}>
-          <ul className='md:flex text-center md:justify-end font-fontKanit bg-[#000000d7] md:bg-transparent'>
+        <div className={`absolute right-0 top-[10%] md:top-0 ${menu} md:relative md:block w-full`}>
+          <ul className='md:flex text-center md:justify-end font-fontKanit bg-[#000000b0] md:bg-transparent'>
             <li className='px-5 hover:text-red-600'><a href="#home">Home</a></li>
             <li className='px-5 hover:text-red-600'><a href="#about">About</a></li>
             <li className='px-5 hover:text-red-600'><a href="#resume">Resume</a></li>

@@ -20,10 +20,10 @@ const Contact = () => {
                     <input className='bg-transparent outline-none border-b-2 border-red-600 py-1' type="email" placeholder='Enter your email' required />
                     <label className='text-start mt-6' htmlFor="msg">Your message *</label>
                     <input className='bg-transparent outline-none border-b-2 border-red-600 py-1' type="text" placeholder='Message' />
-                    <button className='border-2 border-red-600 mt-6 py-2 rounded'>Send<FontAwesomeIcon className='ml-2' icon={faPaperPlane} /></button>
+                    <button className='border-2 hover:text-red-500 border-red-600 mt-6 py-2 rounded'>Send<FontAwesomeIcon className='ml-2 text-red-600' icon={faPaperPlane} /></button>
                 </form>
             </div>
-            <a href="#header" className='absolute right-[5%]'><FontAwesomeIcon icon={faUpLong} className='border-2 border-red-600 rounded-[50%] h-[25px] w-[25px] p-2 text-red-500 cursor-pointer' /></a>
+            <a href="#header" className='absolute right-[5%]'><FontAwesomeIcon icon={faUpLong} className='border-2 border-red-600 rounded-[50%] h-[15px] w-[15px] lg:h-[25px] lg:w-[25px] p-2 text-red-500 cursor-pointer' /></a>
         </div>
     )
 }
