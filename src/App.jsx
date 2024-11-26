@@ -3,7 +3,7 @@ import { About, Contact, Header, HomePage, Services, Skills, Footer } from "./im
 function App() {
 
   return (
-    <>
+    <div className="overflow-hidden">
       <Header />
       <HomePage />
       <About />
@@ -11,7 +11,7 @@ function App() {
       <Skills />
       <Contact />
       <Footer />
-    </>
+    </div>
   )
 }
 
